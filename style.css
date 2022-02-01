@@ -3,7 +3,6 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-
 header{ 
     background: white;
     padding: 10px;
@@ -17,16 +16,20 @@ div.post{
 }
 div.post img{
     width: 100%;
+    border-top: 4px solid gray;
+    border-bottom: 4px solid gray;
 }
-div.post .post-header div:first-child{
-    display: inline-block;
-    width: 80%;
-}
-div.post .post-header div:last-child{
-    display: inline-block;
-    width: 20%;
+div.post .post-header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     color: rgb(226, 221, 221);
+    margin-right: 15px;
+}
+h2{
+    color: black;
 }
 div.post h2, div.post p{
     padding: 10px;
